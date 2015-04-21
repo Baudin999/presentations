@@ -1,112 +1,370 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-	<body>
+    <link rel="stylesheet" href="css/custom/carlos.css">
+</head>
 
-		<div class="reveal">
+<body>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<img src="https://angularjs.org/img/AngularJS-large.png" style="border: none;"/>
-				</section>
+<div class="reveal">
 
-				<section>
-					<h1>Putting the 'M' in MVC</h1>
-				</section>
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
 
-				<section>
-					<section>
-						<h3>AngularJS might seem like:</h3>
-					</section>
+        <section class="pull-left"
+                 data-background="http://static.natgeofoto.nl/pictures/genjUserPhotoPicture/original/31/11/38/52-degrees-nijmegen-381131.jpg">
+            <div>
+                <img src="http://www.iquality.nl/Images/Iquality/Iquality.png" style="border: none; box-shadow: none;"/>
+            </div>
 
-					<section>
-						<img height="500" src="http://www.bikede.org/wp-content/uploads/2013/12/Horse-with-Hands-on-a-Bike.jpg" />
-					</section>
+            <ul style="color: black;">
+                <li class="fragment">AngularJS</li>
+                <li class="fragment">Pitches</li>
+                <li class="fragment">Hapjes en Drankjes</li>
+            </ul>
 
-					<section>
-						<img height="500" src="http://bruce.maulden.us/wp-content/uploads/crazy.jpg" />
-					</section>
-				</section>
+            <aside class="notes">
+                Goede middag en welkom bij IQuality in dit "markante" gebouw.
+            </aside>
+        </section>
 
-				<section>
-					<h1>Carlos</h1>
-					<h3>This is my fourth stuff!!!!!</h3>
+        <section>
+            <h3>Carlos Kelkboom</h3>
 
-					<aside class="notes">
-						This slide has fragments which are also stepped through in the notes window.
-					</aside>
-				</section>
+            <div><img src="images/calros01.png" style="border: none; box-shadow: none;"/></div>
+            <dl>
+                <dt><a href="#">Geen facebook</a></dt>
+                <dt><a href="#">Geen twitter</a></dt>
+                <dt><a href="http://ckelkboom.weebly.com/">Wel een blog!</a></dt>
+            </dl>
 
-			</div>
+            <aside class="notes">
+                Mijn naam is Carlos Kelkboom en ik ben Software Designer, wat inhoudt dat niemand weet
+                wat ik doe of waar ik mee bezig ben. Maar vandaag is dat anders, vandaag kan ik praten
+                over een van mijn hobbies:
+            </aside>
+        </section>
 
-		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section data-background="white">
+            <img src="https://angularjs.org/img/AngularJS-large.png" style="border: none; box-shadow: none;"/>
+        </section>
 
-		<script>
+        <section>
+            <h1>Superheroic JavaScript MVW Framework</h1>
+            <aside class="notes">
+                AngularJS was created by: Miško Hevery
+            </aside>
+        </section>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+        <section>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+            <section>
+                <h1>Wat is software?</h1>
 
-				leap: {
-					pointerOpacity : 0
-				},
+                <p class="fragment">Technical vision</p>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/leap/leap.js', async: true }
-				]
-			});
+                <aside class="notes">
+                    Meestal denken wij van klein naar groot. Zo ook bij het bouwen van applicaties. De natuur
+                    werkt precies hetzelfde.
+                    Software brengt kleine stukjes software bij elkaar tot iets groots.
+                </aside>
+            </section>
 
-		</script>
+            <section>
+                <h2>Bits</h2>
+                <img src="http://cranesoftwrights.com/resources/bittest/bits.gif"/>
 
-	</body>
+                <aside class="notes">
+                    Bits zijn de kleinste herkenbare stukjes informatie. Je zou ze kunnen vergelijken met de atomen
+                    van de informatica. We kunnen kleiner, maar voor ons heeft dat geen zin.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Processor</h2>
+                <img src="http://www.intel.com/pressroom/kits/corei7/images/sm01.jpg"/>
+
+                <aside class="notes">
+                    De processor is waar alle bruikbare bits doorheen moeten om te leiden tot:
+                </aside>
+            </section>
+
+            <section>
+                <h2>Data</h2>
+                <img src="http://upload.wikimedia.org/wikipedia/en/0/09/DataTNG.jpg"/>
+
+                <aside class="notes">
+                    Nee, niet die Data...deze...
+                </aside>
+            </section>
+
+            <section>
+                <h2>Data</h2>
+                <img src="http://www.data.gov.bc.ca/local/dbc/images/feature/img_bg_slider2.png"/>
+            </section>
+
+            <section>
+                <p>Unless you are...</p>
+                <img src="http://upload.wikimedia.org/wikipedia/en/0/09/DataTNG.jpg"/>
+            </section>
+
+            <section>
+                <h2>User Interface</h2>
+                <img src="https://farm6.staticflickr.com/5207/5376366869_706ed60aa0_o.jpg"
+                     style="width: 600px;"/>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h2>Sir Tim Berners-Lee</h2>
+                <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sir_Tim_Berners-Lee.jpg/440px-Sir_Tim_Berners-Lee.jpg"/>
+
+                <aside class="notes">
+                    Berners-Lee is the director of the World Wide Web Consortium (W3C), which oversees the
+                    Web's continued development. He is also the founder of the World Wide Web Foundation,
+                    and is a senior researcher and holder of the Founders Chair at the MIT Computer Science and
+                    Artificial Intelligence Laboratory (CSAIL).[8] He is a director of the Web Science Research
+                    Initiative (WSRI),[9] and a member of the advisory board of the MIT Center for Collective
+                    Intelligence.[10][11]
+                </aside>
+            </section>
+
+            <section>
+                <h2>Internet</h2>
+                <img src="http://www.toptenz.net/wp-content/uploads/2014/11/internet10-640x440.jpg"/>
+
+                <aside class="notes">
+                    Vooral HTML is hier belangrijk in geweest.
+                </aside>
+            </section>
+
+            <section>
+                <h2>DOM</h2>
+                <img src="http://www.webstepbook.com/supplements/slides/images/dom_tree.gif"/>
+            </section>
+
+            <section>
+                <img src="http://demosthenes.info/assets/images/here-be-dragons.png.pagespeed.ce.G7NnNO8eNN.png"/>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h1>What is programming?</h1>
+
+                <aside class="notes">
+                    Programming is the art of making a computer do what you want it to do.
+                </aside>
+            </section>
+
+            <section>
+                <h2>The great divide</h2>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td class="fragment">
+                            <h3>Object Orientation</h3>
+                            <img src="http://img4.wikia.nocookie.net/__cb20131111192418/disney/images/e/e8/IronMan-Avengers.png"
+                                 style="height: 300px; margin-left: 100px;"/>
+                        </td>
+                        <td class="fragment">
+                            <h3>Functional Programming</h3>
+                            <img src="http://vignette4.wikia.nocookie.net/marvelmovies/images/e/e3/Thor-TDWpromo.png/revision/latest?cb=20140410210822"
+                                 style="height: 300px; margin-left: 100px;"/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <aside class="notes">
+                    OO is veel kennis en knutselen.
+                    FP is gewoon sterk...
+                </aside>
+            </section>
+
+            <section>
+                <h2>Brandan Eich</h2>
+                <img style="height: 400px;"
+                     src="http://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg"/>
+            </section>
+
+            <section>
+                <h2>JavaScript</h2>
+                <img src="http://comigirl.com/magazine/wp-content/uploads/2009/12/thor_iron.jpg"
+                     style="width:600px;"/>
+            </section>
+
+            <section>
+                <h2>JavaScript 1.0</h2>
+                <img src="http://cdn.indiewire.com/dims4/INDIEWIRE/a343568/2147483647/thumbnail/680x478/quality/75/?url=http%3A%2F%2Fd1oi7t5trwfj5d.cloudfront.net%2F43%2Fc9%2Fd442db5e431282786bb1a803d998%2Fdaredevil.jpg"/>
+                <aside class="notes">
+                    Who is like the first Daredevil, the one which shall not be named. Still we watched it just like
+                    we used JavaScript to make our websites "come to life".
+                </aside>
+            </section>
+
+            <section>
+                <h2>John Resig</h2>
+                <img src="http://assets.bizjournals.com/boston/blog/mass-high-tech/0123-Resig-7.jpg?v=1"/>
+            </section>
+
+            <section>
+                <h2>JQuery</h2>
+                <img src="http://fc07.deviantart.net/fs71/f/2010/096/3/3/The_Sword_of_Truth_by_ozgurunlu.jpg"/>
+            </section>
+
+            <section>
+                <h2>AngularJS</h2>
+                <img src="http://www-images.theonering.org/torwp/wp-content/uploads/2014/07/thbofa-teaser01-030.jpg?w=688"/>
+                <aside class="notes">
+                    AngularJS is like an entire Elven army
+                </aside>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h2>What makes AngularJS so special?</h2>
+            </section>
+
+            <section>
+                <h2>Uniformity</h2>
+
+                <img class="fragment" style="height: 500px;"
+                        src="images/solution.png"/>
+
+                <aside class="notes">
+                    We can bring the same development experience to the client side as we have come to expect
+                    from the server side.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Cross browser development</h2>
+                <img class="fragment"
+                     src="http://themes.themeton.com/emerald/files/2013/02/cross-browser.jpg" />
+            </section>
+
+            <section>
+                <h2>Dependency Injection</h2>
+                <img class="fragment"
+                     src="http://i3.asp.net/media/44907/dependency-injection-golf.png?raw=true&cdn_id=2015-04-01-001"/>
+            </section>
+
+            <section>
+                <h2>Lots of frameworks</h2>
+                <ul>
+                    <li class="fragment">Twitter bootstrap</li>
+                    <li class="fragment">Firebase</li>
+                    <li class="fragment">Kendo UI</li>
+                    <li class="fragment">DevExpress</li>
+                    <li class="fragment">Sense-i</li>
+                    <li class="fragment">The list goes on...</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>But most importantly</h2>
+                <img src="http://troll.me/images/thumbs-up-jesus-says/i-see-what-you-did-there-and-i-like-it.jpg"
+                        class="fragment"/>
+
+
+
+            </section>
+
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        leap: {
+            pointerOpacity: 0
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true},
+            //{ src: 'plugin/leap/leap.js', async: true }
+        ]
+    });
+
+</script>
+
+</body>
 </html>
